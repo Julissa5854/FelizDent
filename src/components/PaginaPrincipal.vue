@@ -1,31 +1,4 @@
 <template>
-  <!-- Botón de WhatsApp -->
- <a class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="@/assets/ImagenesC/low.jpg" alt="WhatsApp" class="whatsapp-icon">
-  </a>
-
-  <!-- Header -->
-  <header>
-  <div class="navbar">
-    <div class="logo">
-      <img src="@/assets/ImagenesP/logo2.jpg" alt="Logo Felizdent">
-    </div>
-    <button class="menu-toggle" aria-label="Toggle menu" @click="toggleMenu"> 
-      ☰
-    </button>
-    <nav>
-  <ul>
-   <!-- Usa router-link para navegar a diferentes rutas -->
-          <li><router-link to="/servicios">Servicios</router-link></li>
-          <li><router-link to="/consultorios">Consultorios</router-link></li>
-          <li><router-link to="/dentistas">Dentistas</router-link></li>
-          <li><router-link to="/comentarios">Comentarios</router-link></li>
-  </ul>
-</nav>
-  </div>
-</header>
-
-
 <!-- Historia de la Clínica -->
 <v-container>
       <v-row>
@@ -60,9 +33,6 @@
     </div>
   </v-container>
    </v-row>
-
-  
-  
 
      <!-- Dentistas" -->
     <v-container>
@@ -570,47 +540,7 @@
   </div>
   </v-row>
   </v-container>
-
- 
-  <!-- footer -->
-<footer>
-  <div class="footer-content">
-    <div class="footer-logo">
-      <img src="@/assets/ImagenesP/logo2.jpg" alt="Logo Felizdent">
-    </div>
-    
-    <div class="footer-section">
-      <h4>Contacto</h4>
-      <p>Av. Reforma 153, Barrio de Jesús, 75615 San Lorenzo Ometepec, Pue.</p>
-      <p>Teléfono: +52 1 222 152 6613</p>
-    </div>
-
-    <div class="footer-section">
-      <h4>Enlaces Rápidos</h4>
-      <ul>
-           <!-- Usa router-link para navegar a diferentes rutas -->
-           <li><router-link to="/servicios">Servicios</router-link></li>
-          <li><router-link to="/consultorios">Consultorios</router-link></li>
-          <li><router-link to="/dentistas">Dentistas</router-link></li>
-          <li><router-link to="/comentarios">Comentarios</router-link></li>
-          
-        </ul>
-    </div>
-
-    <div class="footer-section">
-      <h4>Horarios de Atención</h4>
-      <p>Lunes a Viernes: 9:00 AM - 6:00 PM.</p>
-      <p>Sábado: 9:00 AM - 2:00 PM.</p>
-      <p>Domingo: Previa Cita.</p>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>&copy; 2024 Felizdent | Todos los derechos reservados.</p>
-  </div>
-</footer>
 </template>
-
 
 <script>
   import imgOdontopediatria from '@/assets/ImagenesP/Den1.jpg';
@@ -681,119 +611,12 @@
       conoceMas() {
         this.$router.push("/conoce-mas");
       },
-      toggleMenu() {
-      // Alterna la clase 'active' en el elemento 'nav'
-      const nav = document.querySelector('nav');
-      nav.classList.toggle('active');
-    },
     }
   };
   </script>
 
 
 <style scoped>
-/* Estilos para el header */
-header {
-  background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 10px 20px;
-    position: fixed;   /* Fija el header en la parte superior */
-    top: 0;            /* Asegura que esté pegado a la parte superior de la página */
-    width: 100%;       /* Asegura que el header ocupe el 100% del ancho */
-    z-index: 1000;     /* Asegura que el header esté por encima de otros elementos */
-}
-
-/* Ajustes para que el contenido de la página no quede tapado por el header */
-body {
-  padding-top: 70px;  /* Ajusta según la altura de tu header */
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 80px;
-
-  margin-right: 10px;
-}
-
-nav {
-  display: flex;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-family: 'Arial', sans-serif;
-  color: black;
-  font-size: 16px;
-}
-
-nav ul li a:hover {
-  color: #55BAA8; /* Color de resaltado al pasar el cursor */
-}
-
-/* Estilos para el botón de menú en móviles */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: black;
-  cursor: pointer;
-  margin-left: auto;
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 60px; /* Ajusta según la altura del header */
-    left: 0;
-    background-color: white;
-    border-top: 1px solid #e0e0e0;
-  }
-
-  nav.active {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
  /* Estilos de la sección "Historia" */
  .hero {
     text-align: center;
@@ -1481,110 +1304,5 @@ nav ul li a:hover {
     height: auto; /* Asegura que la imagen mantenga sus proporciones */
     margin: 0 auto; /* Centra la imagen */
   }
-}
-
-
-/* Estilos para el footer */
-footer {
-  background-color: #e8f5e9; /* Color suave */
-  padding: 40px 20px;
-  color: #333;
-  margin-top: 80px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px; /* Añadido para separar las secciones */
-  
-}
-
-.footer-logo img {
-  height: 80px;
-}
-
-.footer-section {
-  flex-basis: 200px;
-  margin: 20px 0;
-}
-
-.footer-section h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #00bfa5; /* Verde similar al logo */
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-section ul li a:hover {
-  color: #00bfa5; /* Color de resaltado al pasar el cursor */
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid #ccc;
-  margin-top: 20px;
-}
-
-.footer-bottom p {
-  font-size: 14px;
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    
-  }
-  .card {
-    width: 100%;
-    font-size: 1rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
-  }
-
-  .footer-section {
-    flex-basis: 100%;
-    margin: 10px 0;
-  }
-
-  .footer-logo img {
-    height: 60px; /* Ajustar según el tamaño que prefieras */
-  }
-  .card-text {
-    font-size: 1em; /* Reduce el tamaño de fuente para pantallas muy pequeñas */
-  }
-}
-
-  /* Estilos para el botón de WhatsApp */
-  .whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.whatsapp-button img.whatsapp-icon {
-  width: 80px; /* Tamaño del ícono */
-  height: 80px;
 }
 </style>
