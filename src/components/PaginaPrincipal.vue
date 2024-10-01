@@ -41,7 +41,8 @@
 
      <!-- Tarjeta 1 -->
       <v-row>
-     <v-col cols="20" md="4">
+     <!-- Tarjeta 1 -->
+    <v-col cols="12" md="4">
     <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped1 }">
         <!-- Cara delantera -->
@@ -127,8 +128,8 @@
     </div>
   </v-col>
 
-    <!-- Tarjeta 2 -->
-    <v-col cols="20" md="4">
+   <!-- Tarjeta 2 -->
+    <v-col cols="12" md="4">
     <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped2 }">
         <!-- Cara delantera -->
@@ -165,18 +166,10 @@
           <div class="card-back-content">
             <h3>Experiencia</h3>
             <div class="text-with-images2">
-              <img src="@/assets/Imagenes/dentist8.jpg" alt="Logo" class="small-img">
+              <img src="@/assets/Imagenes/dentist10.jpg" alt="Logo" class="small-img">
               <div class="text-content2">
                 <p class="justified-text">
-                  Agosto 2021- Junio 2022 "Profesora en centro de investigación y estudios superiores en estomatología y salud S.C. CESES". (Modalidad en línea).
-                </p>
-              </div>
-            </div>
-            <div class="text-with-images2">
-              <img src="@/assets/Imagenes/dentist9.jpg" alt="Logo" class="small-img">
-              <div class="text-content2">
-                <p class="justified-text">
-                  Junio 2015-diciembre 2019 "Gestora de seguro popular • Operativo • Régimen Estatal de Protección Social en Salud".(seguro popular)
+                  2010-a la fecha "Estomatóloga Pediatra • Clínico • Risu clínica dental".
                 </p>
               </div>
             </div>
@@ -189,10 +182,18 @@
               </div>
             </div>
             <div class="text-with-images2">
-              <img src="@/assets/Imagenes/dentist10.jpg" alt="Logo" class="small-img">
+              <img src="@/assets/Imagenes/dentist9.jpg" alt="Logo" class="small-img">
               <div class="text-content2">
                 <p class="justified-text">
-                  2010-a la fecha "Estomatóloga Pediatra • Clínico • Risu clínica dental".
+                  Junio 2015-diciembre 2019 "Gestora de seguro popular • Operativo • Régimen Estatal de Protección Social en Salud".(seguro popular)
+                </p>
+              </div>
+            </div>
+            <div class="text-with-images2">
+              <img src="@/assets/Imagenes/dentist8.jpg" alt="Logo" class="small-img">
+              <div class="text-content2">
+                <p class="justified-text">
+                  Agosto 2021- Junio 2022 "Profesora en centro de investigación y estudios superiores en estomatología y salud S.C. CESES". (Modalidad en línea).
                 </p>
               </div>
             </div>
@@ -206,7 +207,7 @@
   </v-col>
   
   <!-- Tarjeta 3 -->
-  <v-col cols="20" md="4">
+  <v-col cols="12" md="4">
   <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped3 }">
         <!-- Cara delantera -->
@@ -282,7 +283,7 @@
   </v-col>
 
     <!-- Tarjeta 4 -->
-   <v-col cols="20" md="4">
+   <v-col cols="12" md="4">
   <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped4 }">
         <!-- Cara delantera -->
@@ -319,29 +320,12 @@
           <div class="card-back-content">
             <h3>Diplomados</h3>
             <div class="text-with-images4">
-              <img src="@/assets/Imagenes/dentist13.jpg" alt="Logo" class="small-img">
-              <div class="text-content4">
-                <p class="justified-text">
-                  Diplomado en Odontología Estetica y Restauradora en "Colegio Dental del Estado de Mexico, A.C" 2022. 
-
-                </p>
-              </div>
-            </div>
-            <div class="text-with-images4">
               <img src="@/assets/Imagenes/dentist2.jpg" alt="Logo" class="small-img">
               <div class="text-content4">
                 <p class="justified-text">
-               Diplomado de medicina interna en Estomatología en “Benemérita Universidad
+                  Diplomado de medicina interna en Estomatología en “Benemérita Universidad
               Autónoma de puebla” 2012-2013.
 
-                </p>
-              </div>
-            </div>
-            <div class="text-with-images4">
-              <img src="@/assets/Imagenes/dentist15.jpg" alt="Logo" class="small-img">
-              <div class="text-content4">
-                <p class="justified-text">
-               Diplomado en Cirugía Plástica Periodental en "Colegio de Actualización Profesional Tepeaca"2024.
                 </p>
               </div>
             </div>
@@ -349,9 +333,28 @@
               <img src="@/assets/Imagenes/dentist3.jpg" alt="Logo" class="small-img">
               <div class="text-content4">
                 <p class="justified-text">
-                 Diplomado en Diagnóstico y Tratamientos básicos Periodontales en “Benemérita
-                   Universidad Autónoma de Puebla” abril 2015-febrero 2016.
+              Diplomado en Diagnóstico y Tratamientos básicos Periodontales en “Benemérita
+              Universidad Autónoma de Puebla” abril 2015-febrero 2016.
+
                 </p>
+              </div>
+            </div>
+            <div class="text-with-images4">
+              <img src="@/assets/Imagenes/dentist13.jpg" alt="Logo" class="small-img">
+              <div class="text-content4">
+                <p class="justified-text">
+               Diplomado en Odontología Estetica y Restauradora en "Colegio Dental del Estado de Mexico, A.C" 2022. 
+                </p>
+              </div>
+            </div>
+            <div class="text-with-images4">
+              <img src="@/assets/Imagenes/dentist15.jpg" alt="Logo" class="small-img">
+              <div class="text-content4">
+                <p class="justified-text">
+                   Diplomado en Cirugía Plástica Periodental en "Colegio de Actualización Profesional Tepeaca"2024.
+
+                </p>
+              
             </div>
           </div>
 
@@ -365,7 +368,7 @@
    </v-col>
 
     <!-- Tarjeta 5 -->
-    <v-col cols="20" md="4">
+    <v-col cols="12" md="4">
   <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped5 }">
         <!-- Cara delantera -->
@@ -399,7 +402,7 @@
               <div class="text-content5">
                 <p class="justified-text">
                   Diplomado de medicina interna en Estomatología avalada por
-                   Benemérita Universidad Autónoma de Puebla” 2019-2020. 
+                   "Benemérita Universidad Autónoma de Puebla” 2019-2020. 
 
                 </p>
               </div>
@@ -408,7 +411,7 @@
               <img src="@/assets/Imagenes/dentist15.jpg" alt="Logo" class="small-img">
               <div class="text-content5">
                 <p class="justified-text">
-                  Diplomado de Biocosmetica Dental por el “Colegio de Actualización
+                  Diplomado de Biocosmética Dental por el “Colegio de Actualización
                    de Tepeaca” octubre 2021-septiembre a 2022.
                 </p>
               </div>
@@ -435,7 +438,7 @@
     </v-col>
 
     <!-- Tarjeta 6 -->
-    <v-col cols="20" md="4">
+    <v-col cols="12" md="4">
   <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped6 }">
         <!-- Cara delantera -->
@@ -454,6 +457,7 @@
                 </p>
               </div>
             </div>
+
             <div class="button">
               <button class="btn-primary6v" @click.stop="flipCard6">Ver más</button>
             </div>
@@ -468,10 +472,12 @@
               <img src="@/assets/Imagenes/dentist16.jpg" alt="Logo" class="small-img">
               <div class="text-content6">
                 <p class="justified-text">
-                  Diplomado de Medicina Interna en el "Colegio Actualizacion Odontologica Puebla" (mayo 2023). 
+                  Diplomado de Medicina Interna en el "Colegio Actualización Odontológica Puebla" (mayo 2023).
+
                 </p>
               </div>
             </div>
+
             <div class="button-container">
               <button class="btn-primary6" @click.stop="flipCard6">Volver</button>
             </div>
@@ -501,14 +507,14 @@
     <div class="misvis-item">
       <img src="@/assets/ImagenesP/DentistSon.jpg" alt="Paciente sonriendo">
       <div class="misvis-text1">
-        <h3><i class="icon-check"></i> VISIÓN</h3>
+        <h3> VISIÓN</h3>
         <p>Para el 2026 ser una clínica dental reconocida a nivel regional por la calidad, excelencia y responsabilidad social con la salud bucal de nuestros pacientes.</p>
       </div>
     </div>
 
     <div class="misvis-item">
       <div class="misvis-text">
-        <h3><i class="icon-check"></i> MISIÓN</h3>
+        <h3> MISIÓN</h3>
         <p>FELIZDENT es una clínica dental que brinda servicios de salud bucal con técnicas especializadas utilizando tecnología de vanguardia en material y equipo para asegurar la salud bucal, y satisfacción de nuestros pacientes, basados en la calidad humana.</p>
       </div>
       <img src="@/assets/ImagenesP/DentistP.jpg" alt="Dentista trabajando">
@@ -526,7 +532,7 @@
  <v-container>
   <v-row>
  <div class="valores-container">
-    <h2><i class="fas fa-check-circle"></i> Valores</h2>
+    <h2>Valores</h2>
     <ul class="valores-list">
       <li v-for="valor in valores" :key="valor.nombre">
         <strong :style="{ color: valor.color }">{{ valor.nombre }}:</strong> {{ valor.descripcion }}
@@ -534,12 +540,103 @@
     </ul>
   </div>
 
-  <!-- Imagen del logo fuera del contenedor de valores -->
+  <!-- Imagen del logo -->
   <div class="logo-container">
     <img src="@/assets/ImagenesP/logo2.jpg" alt="Felizdent Logo" class="logo-felizdent">
   </div>
   </v-row>
   </v-container>
+
+<!--Seción de los Vídeos Testimoniales -->
+<v-container> 
+  <div class="testimonials-section">
+    <div class="Blue-container">
+    <h2>Conoce testimonios de nuestros pacientes</h2>
+  </div>
+
+    <!-- Contenedor verde para la interfaz -->
+    <div class="green-container">
+      <!-- Primera fila -->
+      <div class="row">
+        <div class="video-box">
+          <iframe
+            :src="videos[0].url"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blue-box">
+          <p>Nombre Tratamiento</p>
+        </div>
+      </div>
+
+      <!-- Segunda fila-->
+      <div class="row">
+        <div class="blue-box">
+          <p>Nombre Tratamiento</p>
+        </div>
+        <div class="video-box">
+          <iframe
+            :src="videos[1].url"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      
+      <!-- Botón "Conoce más" -->
+      <div class="button-container1">
+        <button class="boton-conoce-mas" @click="conoceMas">Conoce más</button>
+      </div>
+    </div>
+  </div>
+</v-container>
+
+   <!--Seción de los comentarios-->
+   <v-container> 
+    <div class="comentarios-section">
+    <div class="Blue-container">
+    <h2>Comentarios</h2>
+   </div>
+  </div>
+  </v-container>
+    
+  
+
+  <!-- Ubicación de  "San Lorenzo" -->
+      <v-container>
+      <v-row>
+      <v-col>
+         <div class="direccion-boton-contenedor">
+          <img src="@/assets/ImagenesP/ubicacion.jpg" alt="Icono de dirección" class="icono-direccion" />
+          <p class="direccion">{{ address }}</p>
+
+          <!-- Botón "Ver más sucursales" con imagen -->
+          <img src="@/assets/ImagenesP/ub.jpg" alt="Icono de ver más" class="icono-boton" />
+          <button class="boton-ver-mas-sucursales" @click="vermasucursales">Ver más sucursales</button>
+        </div>
+       
+      <!-- Contenedor principal: Imagen y mapa -->
+      <div class="image-and-map">
+        <!-- Imagen del consultorio -->
+        <div class="image-container">
+          <img src="@/assets/ImagenesC/consulSan.jpg" alt="Imagen de la clínica" class="clinica-img">
+        </div>
+  
+        <!-- Mapa de Google Maps del consultorio -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17961.06298242009!2d-97.86873282089783!3d18.84940874728674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cf88b8922ed7d7%3A0xc2f1398865f4100f!2sFelizdent%20Clinica%20Dental!5e0!3m2!1ses!2smx!4v1725846544334!5m2!1ses!2smx"
+            class="map-frame" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </v-col>
+    </v-row>
+    </v-container>
+
 </template>
 
 <script>
@@ -562,7 +659,7 @@
         isFlipped6: false,
   
         especialidades: [
-          { id: 1, nombre: "Odontopediatría", imagen: imgOdontopediatria, url: "/detalles/Odontopediatría" },
+          { id: 1, nombre: "Odontopediatría", imagen: imgOdontopediatria, url: "/detalles/Odonpediatria" },
           { id: 2, nombre: "Endodoncia", imagen: imgEndodoncia, url: "/detalles/Endodoncia" },
           { id: 3, nombre: "Cirugías", imagen: imgCirugias, url: "/detalles/Cirugías" },
           { id: 4, nombre: "Ortodoncia", imagen: imgOrtodoncia, url: "/detalles/Ortodoncia y Ortopedia Maxilar" },
@@ -575,11 +672,21 @@
         { nombre: 'Respeto', color: '#55BAA8', descripcion: 'Saber escuchar y aceptar las decisiones del paciente.' },
         { nombre: 'Honestidad', color: '#55BAA8', descripcion: 'Tenemos el compromiso con nuestros pacientes de brindar información transparente.' },
         { nombre: 'Tolerancia', color: '#55BAA8', descripcion: 'Capacidad de aceptar y respetar las diferencias de culto religión e idioma de nuestros pacientes y en el equipo trabajo.' }
+      ],
+      videos: [
+        { url: 'https://www.youtube.com/embed/VIDEO_ID1', treatment: 'Nombre Tratamiento 1' },
+        { url: 'https://www.youtube.com/embed/VIDEO_ID2', treatment: 'Nombre Tratamiento 2' },
       ]
         
       };
     },
-    
+    props: {
+      address: {
+        type: String,
+        default: 'Av. Reforma 153, Barrio de Jesús, 75615 San Lorenzo Ometepec, Pue.'
+      }
+
+    },
     methods: {
       flipCard1(event) {
         this.isFlipped1 = !this.isFlipped1;
@@ -606,10 +713,13 @@
         event.stopPropagation();
       },
       irADetalle(especialidad) {
-        this.$router.push(especialidad.url);
+        this.$router.push({ name: 'Odontopediatria' }); //Te manda a dentistas
       },
       conoceMas() {
-        this.$router.push("/conoce-mas");
+        this.$router.push({ name: 'Dentistas' }); //Te manda a dentistas
+      },
+      vermasucursales() {
+        this.$router.push({ name: 'Consultorios' }); //Te manda a consultorios
       },
     }
   };
@@ -658,7 +768,7 @@
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: #7fbfdf;
+    background-color: #27E1BC;
     padding: 10px;
     border-radius: 10px;
     width: 100%;
@@ -680,15 +790,15 @@
     
   }
 
-  /* Responsividad para pantallas más pequeñas */
+  /* Media para el carrusel en moviles */
 @media (max-width: 768px) {
   .carrusel {
-    flex-direction: column; /* Cambia la dirección del carrusel a vertical */
+    flex-direction: column; /* Cambia a vertical */
     align-items: center;    /* Centra los elementos en la columna */
   }
 
   .imagen-contenedor {
-    flex: 1 1 90%; /* Ocupa casi todo el ancho de la pantalla en móviles */
+    flex: 1 1 90%; /* Ocupa casi todo el ancho */
   }
 }
 
@@ -699,7 +809,7 @@
   .imagen {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+    object-fit: cover; /* las imágenes se ajustan */
   }
 
   .nombre-overlay {
@@ -752,13 +862,14 @@
   .button-container1 {
     margin-left: 0; /* Elimina el margen negativo */
     text-align: center; /* Centra el botón */
-    height: 20vh; /* O asegúrate de tener el tamaño del contenedor adecuado */
+    height: 20vh; /* tamaño del contenedor*/
   
 }
 .boton-conoce-mas:hover {
-  background-color: #55BAA8; /* Color al pasar el cursor */
+  background-color: #27E1BC; /* Color al pasar el cursor */
   
 }
+/* media para el botón de conoce más*/
 @media (max-width: 768px) {
   .boton-conoce-mas {
     font-size: 16px; /* Ajusta el tamaño de fuente en móviles */
@@ -766,8 +877,8 @@
   }
 
   .card {
-    max-width: 100%; /* Tarjetas al 100% en móviles */
-    height: auto; /* Altura automática en móviles */
+    max-width: 100%; /* Tarjetas al 100% */
+    height: auto; /* Altura automática  */
   }
 
   .button-container1 {
@@ -786,12 +897,12 @@
   overflow: hidden;
   margin: 16px auto;
   background-color: #fff;
-  height: 950px; /* Ajusta la altura según tu diseño */
-  perspective: 1000px; /* Proporciona profundidad para el efecto 3D */
+  height: 950px; /* Ajusta la altura*/
+  perspective: 1000px; /*efecto 3D */
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  -webkit-font-smoothing: antialiased; /* Para navegadores basados(Chrome, Safari) */
   -moz-osx-font-smoothing: grayscale; /* Para navegadores en macOS */
-  font-size: 1rem; /* Tamaño de fuente base */
+  font-size: 1rem; /* Tamaño de fuente */
 }
 
 .card-inner {
@@ -834,32 +945,32 @@
 
 .card-img,.card-img2 {
   width: 100%;
-  height: 500px; /* Ajusta la altura según lo necesites */
+  height: 500px; /* Ajusta la altura */
 
 }
 .card-img3{
   width: 100%;
-  height: 500px; /* Ajusta la altura según lo necesites */
+  height: 500px; /* Ajusta la altura*/
    margin-top: -120px
 }
 .card-img4{
   width: 100%;
-  height: 500px; /* Ajusta la altura según lo necesites */
+  height: 500px; /* Ajusta la altura*/
    margin-top: -75px
 }
 .card-img5{
   width: 100%;
-  height: 500px; /* Ajusta la altura según lo necesites */
+  height: 500px; /* Ajusta la altura*/
    margin-top: -160px
 }
 .card-img6{
   width: 100%;
-  height: 500px; /* Ajusta la altura según lo necesites */
+  height: 500px; /* Ajusta la altura */
    margin-top: -133px
 }
 
 .small-img {
-  width: 40px; /* Tamaño de la imagen pequeña */
+  width: 40px; /* Tamaño de la imagen */
   height: auto;
   margin-right: 8px; /* Espacio entre la imagen y el texto */
 }
@@ -904,14 +1015,15 @@
 }
 
 .card-content h4 {
-  margin: 0 0 8px 0;
-  font-size: 1em;
-  color: #666;
+  font-size: 16px;
+  color: #333;
+  margin: 0; /* Elimina el margen por defecto */
+  font-weight: normal;
 }
 
 .justified-text {
   margin: 0 0 16px 0;
-  color: #666;
+  color:#333;
   text-align: justify;
 }
 .button {
@@ -927,7 +1039,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin-bottom: -1px;
   
@@ -938,9 +1050,9 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
-  margin-bottom: -10px; /* Ajusta según la distancia deseada del botón */
+  margin-bottom: -10px; /* Ajusta la distancia del botón */
   
 }
 .btn-primary3v{
@@ -949,10 +1061,10 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin-top: auto;
-  margin-bottom: -77px; /* Ajusta según la distancia deseada del botón */
+  margin-bottom: -77px; 
 }
 
 .btn-primary4v{
@@ -961,10 +1073,10 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin-top: auto;
-  margin-bottom: -75px; /* Ajusta según la distancia deseada del botón */
+  margin-bottom: -75px; /* Ajusta la distancia del botón */
 }
 .btn-primary5v{
   padding: 12px 26px;
@@ -972,10 +1084,10 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin-top: auto;
-  margin-bottom: -160px; /* Ajusta según la distancia deseada del botón */
+  margin-bottom: -160px; /* Ajusta la distancia del botón */
 }
 .btn-primary6v{
   padding: 12px 26px;
@@ -983,10 +1095,10 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin-top: auto;
-  margin-bottom: -134px; /* Ajusta según la distancia deseada del botón */
+  margin-bottom: -134px; /* Ajusta la distancia del botón */
 
 }
 .btn-primary1{
@@ -995,7 +1107,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin: -15px 0;
   
@@ -1007,7 +1119,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin: 93px 0;
   
@@ -1018,7 +1130,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin: 230px 0;
 }
@@ -1028,7 +1140,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin: 110px 0;
   
@@ -1039,7 +1151,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin: 250px 0;
   
@@ -1050,19 +1162,19 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9em;
-  background-color: #9da94d;
+  background-color: #A3E056;
   color: #fff;
   margin: 615px 0;
   
 }
 .btn-primary1:hover, .btn-primary2:hover, .btn-primary3:hover, .btn-primary4:hover, .btn-primary5:hover,
 .btn-primary6:hover{
-  background-color: #55BAA8;
+  background-color: #27E1BC
 }
 
 .btn-primary1v:hover, .btn-primary2v:hover, .btn-primary3v:hover,.btn-primary4v:hover,.btn-primary5v:hover, .btn-primary6v:hover
 {
-  background-color: #55BAA8;
+  background-color: #27E1BC;
 }
 .button-container {
   width: 100%;
@@ -1130,7 +1242,7 @@
 }
 .filosofia-container h2 {
   font-size: 24px;
-  color: #57C5B6;
+  color: #27E1BC;
   
 }
 .filosofia-container p {
@@ -1138,7 +1250,7 @@
   color: #333;
   margin-bottom: 10px;
   font-weight: bold;
-  margin: 0; /* Elimina el margen por defecto */
+  margin: 0; /* Elimina el margen */
   
 }
 .texto2{
@@ -1180,7 +1292,7 @@
   
 }
 .misvis-text:hover {
-  background-color: #55BAA8;
+  background-color: #27E1BC;
 
 }
 .misvis-text1:hover {
@@ -1190,13 +1302,11 @@
 
 .misvis-text h3, .misvis-text1 h3 {
   font-size: 18px;
-  color: #9da94d;
+  color: #8ac049;
   text-align: center;
   font-weight: bold;
   
-  
 }
-
 .misvis-text h3 i {
   margin-right: 10px;
   font-weight: bold;
@@ -1213,14 +1323,15 @@
   margin-top: 20px;
    
 }
+/* Media para la filosofia, en telefonos moviles */
 @media (max-width: 768px) {
   .misvis-section {
-    flex-direction: column; /* Cambia la dirección a columna para pantallas pequeñas */
-    align-items: center; /* Alinea las cards en el centro */
+    flex-direction: column; /* Cambia a columna */
+    align-items: center; 
   }
 
   .misvis-item {
-    max-width: 100%; /* Asegura que las cards ocupen todo el ancho en pantallas pequeñas */
+    max-width: 100%; /* las tarjetas ocupan todo el ancho */
     margin-bottom: 20px;
   }
 
@@ -1246,7 +1357,7 @@
 
 /* Estilos para el título y la lista de valores */
 .valores-container h2 {
-  color: #9da94d;
+  color: #A3E056;
   font-family: Arial, sans-serif;
   font-size: 24px;
   text-align: center; /* Centrar el título */
@@ -1285,24 +1396,220 @@
   flex-wrap: wrap;
 }
 
-/* Estilos responsivos para móviles */
+/* Estilos responsivos para el contenedor principal */
 @media (max-width: 768px) {
   .contenedor-principal {
-    flex-direction: column; /* Coloca en columna para móviles */
-    align-items: center; /* Centra los elementos en móviles */
+    flex-direction: column; /* Coloca en columna */
+    align-items: center; /* Centra los elementos */
   }
 
   .valores-container,
   .logo-container {
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-    text-align: center; /* Centrar el contenido en móviles */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Centrar el contenido*/
     margin-bottom: 20px;
   }
 
   .logo-felizdent {
-    max-width: 80%; /* Ajusta la imagen para que no sea demasiado grande en móviles */
+    max-width: 80%; /* Ajusta la imagen para que no sea demasiado grande */
     height: auto; /* Asegura que la imagen mantenga sus proporciones */
     margin: 0 auto; /* Centra la imagen */
   }
 }
+
+/* Css de los videos testimoniales */
+.testimonials-section {
+  text-align: center;
+  padding: 20px;
+ 
+}
+/* Fondo Azul */
+.Blue-container {
+  background-color: #27E1BC;;
+  padding: 20px;
+
+}
+
+/* Fondo verde */
+.green-container {
+  background-color: #A3E056;
+  padding: 20px;
+  
+}
+
+/* Filas para organizar elementos */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Cuadros azules para tratamientos */
+.blue-box {
+  background-color: #27E1BC;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 250px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+/* Videos */
+.video-box {
+  width: 55%;
+  
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+.large-video-box iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-bottom: 20px;
+}
+
+/* media para los videos en moviles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .blue-box, .video-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .large-video-box iframe {
+    height: 250px;
+  }
+}
+
+/* Secciónde comentarios */
+.comentarios-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: -72px;
+}
+
+
+  /*Ubicación*/
+.direccion-boton-contenedor {
+  display: flex;
+  justify-content: space-between; /* Dirección a la izquierda, botón a la derecha */
+  align-items: center; /* Alinea verticalmente ambos elementos */
+  
+}
+
+.icono-direccion{
+  width: 50px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción */
+  margin-right: 0; /* Sin margen entre imagen y texto */
+}
+.icono-boton {
+  width: 70px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción */
+  margin-right: 0; /* Sin margen entre imagen y texto */
+}
+
+/* Estilo de la dirección */
+.direccion {
+  font-size: 16px;
+  color: #333;
+  margin: 0; /* Elimina márgenes innecesarios */
+  width: 70%; /*ancho disponible */
+}
+
+/* Estilo del botón */
+.boton-ver-mas-sucursales {
+  color: rgb(231, 23, 23); /* Texto rojo*/
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de texto */
+  cursor: pointer; /* Muestra el cursor de mano */
+  font-weight: bold;
+ 
+}
+
+  .image-and-map {
+  display: flex;
+  flex-direction: row; /* Diseño en pantallas grandes */
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  }
+  
+  /* Estilo para la imagen del consultorio */
+  .image-container,.map-container {
+    flex: 1; /* Permite que el contenedor de la imagen ocupe el espacio disponible */
+  }
+  
+  .clinica-img {
+    width: 100%; /* Ajusta el ancho a 100% del contenedor */
+    height: 350px; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+  }
+  
+  /* Estilo para el mapa */
+  .map-container {
+    flex: 1; /* Permite que el contenedor del mapa ocupe el espacio disponible */
+  }
+  
+  .map-frame {
+    width: 100%; /* Ajusta el ancho a 100% del contenedor */
+    height: 350px; /* Ajusta la altura del mapa */
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .map-link {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 5px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Aumenta el tamaño del enlace */
+  }
+  
+  .map-link:hover {
+    text-decoration: underline;
+  }
+
+
+/* Media para la Ubicación */
+@media (max-width: 768px) {
+  .image-and-map {
+    flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .map-frame {
+    height: 250px; /* Ajusta la altura del mapa en móviles */
+  }
+
+  .clinica-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .direccion-boton-contenedor{
+    flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+    align-items: center;
+  }
+  
+
+}
+
 </style>

@@ -1,30 +1,3 @@
-<template>
-  <!-- Botón de WhatsApp -->
- <a class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="@/assets/ImagenesC/low.jpg" alt="WhatsApp" class="whatsapp-icon">
-  </a>
-
-  <!-- Header -->
-  <header>
-  <div class="navbar">
-    <div class="logo">
-      <img src="@/assets/ImagenesP/logo2.jpg" alt="Logo Felizdent">
-    </div>
-    <button class="menu-toggle" aria-label="Toggle menu" @click="toggleMenu"> 
-      ☰
-    </button>
-    <nav>
-  <ul>
-   <!-- Usa router-link para navegar a diferentes rutas -->
-   <li><router-link to="/servicios">Servicios</router-link></li>
-          <li><router-link to="/Consultorios">Consultorios</router-link></li>
-          <li><router-link to="/dentist">Dentistas</router-link></li>
-          <li><router-link to="/comentarios">Comentarios</router-link></li>
-  </ul>
-</nav>
-  </div>
-</header>
-
 
 <!-- Historia de la Clínica -->
 <v-container>
@@ -61,8 +34,6 @@
   </v-container>
    </v-row>
 
-  
-  
 
      <!-- Dentistas" -->
     <v-container>

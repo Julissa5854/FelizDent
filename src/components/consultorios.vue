@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-     <!-- Tarjeta de consultorio de Pueba -->
+     <!-- Tarjeta de consultorio de Puebla -->
      <div class="consultorio-card4">
             <div class="consultorio-info">
               <h2>{{ name4 }}</h2>
@@ -212,9 +212,11 @@
   
   /* Contenedor para la imagen y el mapa */
   .image-and-map {
-    display: flex; /* Cambia la dirección de los elementos alinear horizontalmente */
-    align-items: flex-start; /* Alinea los elementos al inicio */
-    gap: 20px; /* Espacio entre la imagen y el mapa */
+  display: flex;
+  flex-direction: row; /* Diseño por defecto en pantallas grandes */
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
   }
   
   /* Estilo para la imagen del consultorio */
@@ -296,5 +298,23 @@
   color: #555; /* Color del texto */
 }
 
+/* Diseño vertical para pantallas móviles  */
+@media (max-width: 768px) {
+  .image-and-map {
+    flex-direction: column; /* Cambia a diseño vertical */
+    align-items: center;
+  }
+
+  .map-frame {
+    height: 250px; /* Ajusta la altura del mapa en móviles */
+  }
+
+  .clinica-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
   </style>
   

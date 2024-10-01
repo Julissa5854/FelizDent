@@ -1,6 +1,5 @@
 <template>
     <!-- footer -->
-    <v-app>
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
@@ -35,7 +34,7 @@
         <p>&copy; 2024 Felizdent | Todos los derechos reservados.</p>
       </div>
     </footer>
-</v-app>
+
   </template>
   
   <script>
@@ -45,6 +44,7 @@
   </script>
   
   <style scoped>
+  
   /* Estilos para el footer */
   footer {
     background-color: #e8f5e9; /* Color suave */
@@ -72,7 +72,7 @@
   .footer-section h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #00bfa5; /* Verde similar al logo */
+    color: #00bfa5; /*logo */
   }
   
   .footer-section ul {
@@ -104,7 +104,7 @@
     font-size: 14px;
   }
   
-  /* Media query para dispositivos móviles */
+  /* Footer para moviles */
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;
@@ -116,7 +116,7 @@
     }
   
     .footer-logo img {
-      height: 60px; /* Ajustar según el tamaño que prefieras */
+      height: 60px; /* Ajusta el tamaño */
     }
   }
   </style>
