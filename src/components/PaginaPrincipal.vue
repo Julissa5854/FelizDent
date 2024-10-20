@@ -33,6 +33,7 @@
     </div>
   </v-container>
    </v-row>
+   
 
      <!-- Dentistas" -->
     <v-container>
@@ -41,7 +42,6 @@
 
      <!-- Tarjeta 1 -->
       <v-row>
-     <!-- Tarjeta 1 -->
     <v-col cols="12" md="4">
     <div class="card">
       <div class="card-inner" :class="{ flipped: isFlipped1 }">
@@ -50,7 +50,6 @@
           <img src="@/assets/Imagenes/dentist.jpg" alt="Imagen del Dentista" class="card-img">
           <div class="card-content">
             <h3>Dra. Blanca Rodríguez Cortez</h3>
-
             <h4>Cirujano Dentista, Especialista en Cirugía Maxilofacial, con Maestría y Doctorado en Ciencias de la Educación y Doctorado en Salud Pública.</h4>
             <hr class="custom-line"> <!-- Línea horizontal -->
             <div class="text-with-images">
@@ -602,7 +601,7 @@
    </div>
   </div>
   </v-container>
-    
+  
   
 
   <!-- Ubicación de  "San Lorenzo" -->
@@ -659,11 +658,11 @@
         isFlipped6: false,
   
         especialidades: [
-          { id: 1, nombre: "Odontopediatría", imagen: imgOdontopediatria, url: "/detalles/Odonpediatria" },
+          { id: 1, nombre: "Odontopediatría", imagen: imgOdontopediatria, url: "/detalles/Odontopediatria" },
           { id: 2, nombre: "Endodoncia", imagen: imgEndodoncia, url: "/detalles/Endodoncia" },
           { id: 3, nombre: "Cirugías", imagen: imgCirugias, url: "/detalles/Cirugías" },
           { id: 4, nombre: "Ortodoncia", imagen: imgOrtodoncia, url: "/detalles/Ortodoncia y Ortopedia Maxilar" },
-          { id: 5, nombre: "Estética Dental", imagen: imgEstetica, url: "/detalles/estetica-dental" },
+          { id: 5, nombre: "Estética Dental", imagen: imgEstetica, url: "/detalles/EsteticaDental" },
           { id: 6, nombre: "Periodoncia", imagen: imgPeriodoncia, url: "/detalles/Periodoncia" }
         ],
         valores: [
@@ -677,53 +676,71 @@
         { url: 'https://www.youtube.com/embed/VIDEO_ID1', treatment: 'Nombre Tratamiento 1' },
         { url: 'https://www.youtube.com/embed/VIDEO_ID2', treatment: 'Nombre Tratamiento 2' },
       ]
-        
-      };
-    },
-    props: {
-      address: {
-        type: String,
-        default: 'Av. Reforma 153, Barrio de Jesús, 75615 San Lorenzo Ometepec, Pue.'
-      }
-
-    },
-    methods: {
-      flipCard1(event) {
-        this.isFlipped1 = !this.isFlipped1;
-        event.stopPropagation();
-      },
-      flipCard2(event) {
-        this.isFlipped2 = !this.isFlipped2;
-        event.stopPropagation();
-      },
-      flipCard3(event) {
-        this.isFlipped3 = !this.isFlipped3;
-        event.stopPropagation();
-      },
-      flipCard4(event) {
-        this.isFlipped4 = !this.isFlipped4;
-        event.stopPropagation();
-      },
-      flipCard5(event) {
-        this.isFlipped5 = !this.isFlipped5;
-        event.stopPropagation();
-      },
-      flipCard6(event) {
-        this.isFlipped6 = !this.isFlipped6;
-        event.stopPropagation();
-      },
-      irADetalle(especialidad) {
-        this.$router.push({ name: 'Odontopediatria' }); //Te manda a dentistas
-      },
-      conoceMas() {
-        this.$router.push({ name: 'Dentistas' }); //Te manda a dentistas
-      },
-      vermasucursales() {
-        this.$router.push({ name: 'Consultorios' }); //Te manda a consultorios
-      },
+    };
+  },
+  props: {
+    address: {
+      type: String,
+      default: 'Av. Reforma 153, Barrio de Jesús, 75615 San Lorenzo Ometepec, Pue.'
     }
-  };
-  </script>
+  },
+  methods: {
+    flipCard1(event) {
+      this.isFlipped1 = !this.isFlipped1;
+      event.stopPropagation();
+    },
+    flipCard2(event) {
+      this.isFlipped2 = !this.isFlipped2;
+      event.stopPropagation();
+    },
+    flipCard3(event) {
+      this.isFlipped3 = !this.isFlipped3;
+      event.stopPropagation();
+    },
+    flipCard4(event) {
+      this.isFlipped4 = !this.isFlipped4;
+      event.stopPropagation();
+    },
+    flipCard5(event) {
+      this.isFlipped5 = !this.isFlipped5;
+      event.stopPropagation();
+    },
+    flipCard6(event) {
+      this.isFlipped6 = !this.isFlipped6;
+      event.stopPropagation();
+    },
+    irADetalle(especialidad) {
+      console.log("Navegando a:", especialidad.url);
+      switch (especialidad.nombre) {
+        case "Odontopediatría": 
+          this.$router.push({ name: "Odontopediatria" });
+          break;
+        case "Endodoncia": 
+          this.$router.push({ name: "Endodoncia" });
+          break;
+        case "Cirugías":
+          this.$router.push({ name: "Cirugías" });
+          break;
+        case "Ortodoncia": 
+          this.$router.push({ name: "Ortodoncia" });
+          break;
+        case "Estética Dental": 
+          this.$router.push({ name: "EsteticaDental" });
+          break;
+        case "Periodoncia": 
+          this.$router.push({ name: "Periodoncia" });
+          break;
+      }
+    },
+    conoceMas() {
+      this.$router.push({ name: 'Dentistas' });
+    },
+    vermasucursales() {
+      this.$router.push({ name: 'Consultorios' });
+    },
+  }
+};
+</script>
 
 
 <style scoped>
@@ -848,7 +865,7 @@
   }
   /* Estilos para el botón de conoce más, de los dentistas*/
   .boton-conoce-mas {
-    background-color: #6BAA1C;
+  background-color: #6BAA1C;
   color: black;
   border: none;
   padding: 10px 20px;
@@ -857,12 +874,18 @@
   cursor: pointer;
   margin-top: 35px;
   transition: background-color 0.3s ease;
+  max-width: 100%; /* Asegura que el botón no exceda el ancho del contenedor */
+  box-sizing: border-box; /* Considera padding y borde en el ancho total */
    
   }
   .button-container1 {
-    margin-left: 0; /* Elimina el margen negativo */
-    text-align: center; /* Centra el botón */
-    height: 20vh; /* tamaño del contenedor*/
+  margin-left: 0;
+  text-align: center;
+  height: auto; /* Ajusta la altura para evitar espacio innecesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0; /* Añade algo de espacio superior e inferior */
   
 }
 .boton-conoce-mas:hover {
@@ -872,18 +895,11 @@
 /* media para el botón de conoce más*/
 @media (max-width: 768px) {
   .boton-conoce-mas {
-    font-size: 16px; /* Ajusta el tamaño de fuente en móviles */
-    padding: 8px 16px; /* Ajusta el tamaño del botón */
+    font-size: 16px; /* Reduce el tamaño del texto en pantallas más pequeñas */
+    padding: 8px 16px; /* Ajusta el padding en móviles */
   }
-
-  .card {
-    max-width: 100%; /* Tarjetas al 100% */
-    height: auto; /* Altura automática  */
-  }
-
   .button-container1 {
-    margin-left: 0;
-    text-align: center;
+    padding: 10px; /* Ajusta el espacio alrededor del botón */
   }
 }
 
@@ -1111,7 +1127,7 @@
   color: #fff;
   margin: -15px 0;
   
-  
+
 }
 .btn-primary2{
   padding: 12px 26px;
@@ -1231,9 +1247,8 @@
 .doctors-gallery{
   background-color: #A3E056;
   margin-top: -25px;
-
-/* Estilos para la Filosofía */
 }
+/* Estilos para la Filosofía */
 .filosofia-container {
   margin: 0 auto;
   padding: 20px;
@@ -1388,26 +1403,36 @@
 }
 
 
-/* Contenedor principal para manejar flexbox */
-.contenedor-principal {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
 /* Estilos responsivos para el contenedor principal */
 @media (max-width: 768px) {
-  .contenedor-principal {
-    flex-direction: column; /* Coloca en columna */
-    align-items: center; /* Centra los elementos */
+  .valores-container{
+    width: 100%;
+    max-width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
   }
-
-  .valores-container,
   .logo-container {
     width: 100%; /* Ocupa todo el ancho del contenedor */
     text-align: center; /* Centrar el contenido*/
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+}
+@media (max-width: 900px) {
+  .valores-container{
+    width: 100%;
+    max-width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .logo-container {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Centrar el contenido*/
+    margin-bottom: 30px;
   }
 
   .logo-felizdent {
@@ -1416,6 +1441,28 @@
     margin: 0 auto; /* Centra la imagen */
   }
 }
+@media (max-width: 1200px) {
+  .valores-container{
+    width: 100%;
+    max-width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  .logo-container {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Centrar el contenido*/
+    margin-bottom: 30px;
+  }
+
+  .logo-felizdent {
+    max-width: 80%; /* Ajusta la imagen para que no sea demasiado grande */
+    height: auto; /* Asegura que la imagen mantenga sus proporciones */
+    margin: 0 auto; /* Centra la imagen */
+  }
+}
+
 
 /* Css de los videos testimoniales */
 .testimonials-section {

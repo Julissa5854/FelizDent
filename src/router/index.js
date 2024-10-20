@@ -3,6 +3,10 @@ import PaginaPrincipal from '../components/PaginaPrincipal.vue';
 import Consultorios from '../components/consultorios.vue'; 
 import Dentistas from '../components/DentistCard.vue'; 
 import Odontopediatria from '@/components/Odontopediatria.vue';
+import EsteticaDental from '@/components/EsteticaDental.vue';
+import Periodoncia from '@/components/Periodoncia.vue';
+import Comentarios from '@/components/Comentarios.vue';
+
 
 const routes = [
   {
@@ -21,9 +25,24 @@ const routes = [
     component: Dentistas,
   },
   {
-    path: '/odontopediatria',
+    path: '/Odontopediatria',
     name: 'Odontopediatria',
     component: Odontopediatria,
+  },
+  {
+    path: '/EsteticaDental',
+    name: 'EsteticaDental',
+    component: EsteticaDental,
+  },
+  {
+    path: '/Periodoncia',
+    name: 'Periodoncia',
+    component: Periodoncia,
+  },
+  {
+    path: '/Comentarios',
+    name: 'Comentarios',
+    component: Comentarios,
   },
 
 ];

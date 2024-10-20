@@ -1,4 +1,4 @@
-<!-- src/views/Consultorios.vue -->
+
 <template>
 
   <div class="consultorios">

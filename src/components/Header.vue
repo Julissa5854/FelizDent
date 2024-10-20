@@ -14,7 +14,7 @@
           <li @click="closeMenu"><router-link to="/servicios">Servicios</router-link></li>
           <li @click="closeMenu"><router-link to="/consultorios">Consultorios</router-link></li>
           <li @click="closeMenu"><router-link to="/dentistas">Dentistas</router-link></li>
-          <li @click="closeMenu"><router-link to="/comentarios">Comentarios</router-link></li>
+          <li @click="closeMenu"><router-link to="/Comentarios">Comentarios</router-link></li>
         </ul>
       </nav>
     </div>

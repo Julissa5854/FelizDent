@@ -1,5 +1,4 @@
-
-<!-- Historia de la Clínica -->
+<template>
 <v-container>
       <v-row>
     <section class="hero">
